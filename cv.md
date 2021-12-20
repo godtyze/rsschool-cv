@@ -10,7 +10,9 @@
 * [**VK**](https://vk.com/id145645209)
 
 ## About Me
-I am 22 years old. For now, I’m studying in a field of science, connected with mathematics, programming and cybernetics. My goal is to become a web frontend-developer.
+I am 22 years old. For now, I’m studying in a field of science, connected with mathematics, programming and cybernetics. 
+
+My goal is to become a web frontend-developer.
 
 ## Skills
 * HTML
@@ -48,6 +50,9 @@ const findFactorial = (number) => {
 * HTML and CSS courses on [code-basics](https://ru.code-basics.com/)
 * JavaScript on [learnjavascript](https://learn.javascript.ru/) (in progress)
 * RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+
+## Work Experience
+Not yet. I wish I'm going to make it soon. (:
 
 ## Language
 * Russian (Native Speaker)
