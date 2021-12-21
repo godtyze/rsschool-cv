@@ -1,0 +1,366 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+}
+
+.content {
+    display: flex;
+    max-width: 1080px;
+    width: 100%;
+    background-color: azure;
+    box-shadow: 2px 2px 5px #8d8989;
+    margin-top: 30px;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+}
+
+.aside__title {
+    display: flex;
+    align-self: center;
+    margin-bottom: 30px;
+    background-color: #3b3b3b;
+    padding: 15px 35px 15px 35px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.aside__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #ffd6d2;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.aside__info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 25px 0 25px 0;
+}
+
+.header__profile-photo {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 3px 1px #b3b3b3;
+}
+
+.header__profile-photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.cv-name {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.cv-sub {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__list {
+    list-style: none;
+}
+
+.contact__list-item {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.contact__list-item.github::before {
+    content: "";
+    background: url("./icons/github.png") no-repeat center center;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-size: 80%;
+    left: -30px;
+}
+
+.contact__list-item.e-mail::before {
+    content: "";
+    background: url("./icons/e-mail.png") no-repeat center center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-size: 80%;
+    left: -32px;
+    top: -2px;
+}
+
+.contact__list-item.phone::before {
+    content: "";
+    background: url("./icons/phone.png") no-repeat center center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-size: 80%;
+    left: -30px;
+}
+
+.contact__list-item.location::before {
+    content: "";
+    background: url("./icons/location.png") no-repeat center center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-size: 80%;
+    left: -30px;
+    top: -5px;
+}
+
+.skills__list {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-left: 75px;
+    list-style: none;
+}
+
+.skills__list-item {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.skills__list-item.html::before {
+    content: "";
+    background: url("./icons/html.png") no-repeat center center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background-size: 80%;
+    left: -35px;
+    top: -10px;
+}
+
+.skills__list-item.css::before {
+    content: "";
+    background: url("./icons/css.png") no-repeat center center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background-size: 80%;
+    left: -35px;
+    top: -10px;
+}
+
+.skills__list-item.javascript::before {
+    content: "";
+    background: url("./icons/js.png") no-repeat center center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background-size: 80%;
+    left: -35px;
+    top: -5px;
+}
+
+.skills__list-item.git::before {
+    content: "";
+    background: url("./icons/git.png") no-repeat center center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-size: 80%;
+    left: -35px;
+    top: -5px;
+}
+
+.skills__list-item.blender::before {
+    content: "";
+    background: url("./icons/blender.png") no-repeat center center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-size: 80%;
+    left: -35px;
+    top: -5px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.main__title {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #403e3c;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+}
+
+.main__title.about::before {
+    content: "";
+    background: url("./icons/about.png") no-repeat center center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background-size: 80%;
+    left: -40px;
+    top: -3px;
+}
+
+.main__title.code::before {
+    content: "";
+    background: url("./icons/code.png") no-repeat center center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-size: 80%;
+    left: -45px;
+    top: -3px;
+}
+
+.main__title.education::before {
+    content: "";
+    background: url("./icons/education.png") no-repeat center center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-size: 80%;
+    left: -45px;
+    top: -3px;
+}
+
+.main__title.work::before {
+    content: "";
+    background: url("./icons/work.png") no-repeat center center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background-size: 80%;
+    left: -42px;
+    top: -3px;
+}
+
+.main__block {
+    padding: 0 30px;
+    margin-bottom: 60px
+}
+
+.main__text {
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.main__code-example {
+    background-color: #E6E6E6;
+    margin-top: 10px;
+}
+
+.main__list {
+    font-size: 19px;
+}
+
+.main__list-item {
+    padding: 10px;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.under-list__item {
+    margin-left: 15px;
+}
+
+.date {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.main__list-item.courses {
+    padding: 10px;
+    margin: 10px;
+    line-height: 10px;
+}
+
+.footer {
+    display: flex;
+    height: 60px;
+    width: 1080px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px #8d8989;
+}
+
+.footer__list {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.footer__list-item-link.github {
+    width: 50px;
+    height: 50px;
+    background: url("./icons/github.png") no-repeat center center;
+    display: inline-block;
+    background-size: contain;
+}
+
+.rs-logo {
+    width: 120px;
+    height: 50px;
+    background: url("./icons/rs_school_js.svg") no-repeat center center;
+    display: inline-block;
+    background-size: contain;
+}
+
+.year {
+    font-size: 20px;
+}
