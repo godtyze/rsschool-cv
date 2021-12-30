@@ -326,14 +326,46 @@ body {
     line-height: 10px;
 }
 
-.footer {
+.projects::before {
+    content: "";
+    background: url("./icons/screen-svgrepo-com.svg") no-repeat center center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background-size: 80%;
+    left: -42px;
+    top: -2px;
+}
+
+.link-wrapper {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 270px;
+    width: 250px;
+    transition: box-shadow ease-in-out 0.2s;
+}
+
+.link-wrapper:hover {
+    box-shadow: 2px 2px 5px #8d8989;
+}
+
+.preview {
+    width: 200px;
+}
+
+.footer {
     height: 60px;
     width: 1080px;
-    align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 2px 2px 5px #8d8989;
+}
+
+.footer__nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
 }
 
 .footer__list {
